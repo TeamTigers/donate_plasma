@@ -1,4 +1,6 @@
+import 'package:donateplasma/models/User.dart';
 import 'package:donateplasma/providers/information.dart';
+import 'package:donateplasma/providers/users.dart';
 import 'package:donateplasma/screens/BannerScreen.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +19,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (ctx) => Information(),
+        ),
+        ChangeNotifierProvider(
+          create: (ctx) => Users(),
         )
       ],
       child: MaterialApp(

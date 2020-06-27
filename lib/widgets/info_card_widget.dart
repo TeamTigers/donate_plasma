@@ -21,13 +21,13 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
         height: 150.0,
         width: 150.0,
         decoration: BoxDecoration(
-          color: widget.color,
+          color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(
               offset: Offset(-4, 4),
               blurRadius: 10,
-              color: Color(0xFFFFBF05).withOpacity(.4),
+              color: Color(0xFFFFBF05).withOpacity(.2),
             )
           ],
         ),
