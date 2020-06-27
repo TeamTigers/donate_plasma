@@ -1,4 +1,5 @@
 import 'package:donateplasma/screens/BannerScreen.dart';
+import 'package:donateplasma/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 
@@ -18,6 +19,10 @@ class MyApp extends StatelessWidget {
       ),
       home: BannerScreen(),
       debugShowCheckedModeBanner: false,
+      routes: {
+        HomeScreen.routeName: (ctx) => HomeScreen(),
+        BannerScreen.routeName: (ctx) => BannerScreen()
+      },
     );
   }
 }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 
 class BannerScreen extends StatelessWidget {
+  static const routeName = '/banner';
+
   @override
   Widget build(BuildContext context) {
     return Container(
