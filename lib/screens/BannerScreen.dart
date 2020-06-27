@@ -1,4 +1,5 @@
 import 'package:donateplasma/constants/text_style_constants.dart';
+import 'package:donateplasma/screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 
@@ -45,7 +46,9 @@ class BannerScreen extends StatelessWidget {
                     minWidth: 100.0,
                     height: 40.0,
                     child: RaisedButton(
-                      onPressed: () {  },
+                      onPressed: () {
+                        Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+                      },
                       child: Text(
                         'Got it',
                         style: TextStyle(
