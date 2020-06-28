@@ -63,7 +63,7 @@ class _UsersCardState extends State<UsersCard> {
                 Text(
                   widget.userName,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 12,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w600,
                   ),

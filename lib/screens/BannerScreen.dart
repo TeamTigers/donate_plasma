@@ -1,7 +1,9 @@
 import 'package:donateplasma/constants/text_style_constants.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BannerScreen extends StatelessWidget {
   static const routeName = '/banner';
@@ -16,8 +18,25 @@ class BannerScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Container(
+              height: 95.0,
+              width: 95.0,
+              child: Image.asset('assets/images/heart.png'),
+            ),
+            Row(
+              children: <Widget>[
+                Text(
+                  'Donate',
+                  style: kBannerTitleStyle,
+                ),
+                Text(
+                  ' Plasma',
+                  style: kBannerPlasmaTitleStyle,
+                )
+              ],
+            ),
             Text(
-              'Donate Plasma, Save Life',
+              'Save Life',
               style: kBannerTitleStyle,
             ),
             SizedBox(
@@ -35,7 +54,7 @@ class BannerScreen extends StatelessWidget {
               style: kBannerSub02TitleStyle,
             ),
             SizedBox(
-              height: 65.0,
+              height: 45.0,
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
@@ -58,10 +77,9 @@ class BannerScreen extends StatelessWidget {
                           fontFamily: 'Poppins'
                         ),
                       ),
-                      color: Theme.of(context).primaryColor,
+                      color: kBannerBasicColor,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0),
-                          side: BorderSide(color: Theme.of(context).accentColor,)
+                          borderRadius: BorderRadius.circular(7.0),
                       ),
                     ),
                   )
