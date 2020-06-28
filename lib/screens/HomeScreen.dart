@@ -2,6 +2,7 @@ import 'package:donateplasma/constants/color_constants.dart';
 import 'package:donateplasma/constants/text_style_constants.dart';
 import 'package:donateplasma/providers/information.dart';
 import 'package:donateplasma/providers/users.dart';
+import 'package:donateplasma/widgets/drawerWidget.dart';
 import 'package:donateplasma/widgets/info_card_widget.dart';
 import 'package:donateplasma/widgets/users_card_widget.dart';
 import 'package:flutter/cupertino.dart';
@@ -26,52 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       key: _scaffoldKey,
-      drawer: Drawer(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              height: 180.0,
-              color: Theme.of(context).primaryColor,
-              child: Column(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 25, 20, 20),
-                    child: Text(
-                      'Donate Plasma',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 40.0,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            ListTile(
-              leading: FaIcon(
-                FontAwesomeIcons.leaf,
-                color: Colors.blueAccent.shade700,
-              ),
-              title: Text(
-                'Stories'
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: FaIcon(
-                FontAwesomeIcons.heart,
-                color: Colors.pinkAccent.shade400,
-              ),
-              title: Text(
-                  'Be a donor'
-              ),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
+      drawer: CustomDrawer(),
       appBar: AppBar(
         title: Center(
           child: Text(
@@ -120,16 +76,25 @@ class _HomeScreenState extends State<HomeScreen> {
                       infoId: information[index].infoId,
                     )),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(25, 10, 0, 0),
-            child: Text(
-              'Find donors',
-              style: TextStyle(
-                fontSize: 18,
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.bold,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.fromLTRB(25, 10, 0, 0),
+                child: Text(
+                  'Find donors',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 10, 25, 0),
+                child: Icon(Icons.search),
+              ),
+            ],
           ),
           Expanded(
             child: GridView.builder(

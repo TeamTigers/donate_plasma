@@ -58,20 +58,20 @@ class _UsersCardState extends State<UsersCard> {
                 padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                 child: Icon(
                   Icons.textsms,
-                  size: 28.0,
-                  color: Theme.of(context).primaryColor,
+                  size: 26.0,
+                  color: Colors.deepOrange.shade400,
                 ),
               )
             ],
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 5, 0, 5),
+            padding: const EdgeInsets.fromLTRB(10, 5, 0, 8),
             child: Row(
               children: <Widget>[
                 FaIcon(
                   FontAwesomeIcons.userAstronaut,
                   size: 16.0,
-                  color: Colors.pinkAccent,
+                  color: Colors.orangeAccent,
                 ),
                 SizedBox(
                   width: 5.0,
@@ -88,13 +88,13 @@ class _UsersCardState extends State<UsersCard> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 0, 0, 5),
+            padding: const EdgeInsets.fromLTRB(10, 0, 0, 8),
             child: Row(
               children: <Widget>[
                 FaIcon(
                   FontAwesomeIcons.searchLocation,
                   size: 16.0,
-                  color: Colors.pinkAccent,
+                  color: Colors.deepOrangeAccent,
                 ),
                 SizedBox(
                   width: 5.0,
@@ -117,7 +117,7 @@ class _UsersCardState extends State<UsersCard> {
                 FaIcon(
                   FontAwesomeIcons.heart,
                   size: 16.0,
-                  color: Colors.pinkAccent,
+                  color: Colors.deepOrange,
                 ),
                 SizedBox(
                   width: 5.0,
@@ -140,14 +140,14 @@ class _UsersCardState extends State<UsersCard> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                height: 30.0,
-                width: 30.0,
+                height: 35.0,
+                width: 35.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18.0),
                   color: Colors.green,
                 ),
                 child: new IconButton(
-                  iconSize: 15.5,
+                  iconSize: 19.0,
                   icon: new Icon(
                     Icons.dialer_sip,
                     color: Colors.white,

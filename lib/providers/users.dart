@@ -51,6 +51,38 @@ class Users extends ChangeNotifier {
         userLocation: 'Pabna',
         userBlood: 'A+'
     ),
+    User(
+        userId: 7,
+        userName: 'Ovi Shahriar',
+        userDP: 'assets/images/user0.png',
+        userPhone: '+880123456789',
+        userLocation: 'Pabna',
+        userBlood: 'A+'
+    ),
+    User(
+        userId: 8,
+        userName: 'Sarker Shahriar',
+        userDP: 'assets/images/user0.png',
+        userPhone: '+880123456789',
+        userLocation: 'Pabna',
+        userBlood: 'A+'
+    ),
+    User(
+        userId: 9,
+        userName: 'John Doe',
+        userDP: 'assets/images/user0.png',
+        userPhone: '+880123456789',
+        userLocation: 'Pabna',
+        userBlood: 'A+'
+    ),
+    User(
+        userId: 10,
+        userName: 'Hasib Khan',
+        userDP: 'assets/images/user0.png',
+        userPhone: '+880123456789',
+        userLocation: 'Pabna',
+        userBlood: 'A+'
+    ),
   ];
 
   List<User> get userList {

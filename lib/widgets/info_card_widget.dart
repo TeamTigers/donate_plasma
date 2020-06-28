@@ -41,7 +41,7 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
             bottomRight: Radius.circular(8.0),
             bottomLeft: Radius.circular(8.0),
             topLeft: Radius.circular(8.0),
-            topRight: Radius.circular(48.0),
+            topRight: Radius.circular(45.0),
           ),
         ),
         child: Column(

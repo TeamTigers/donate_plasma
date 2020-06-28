@@ -11,7 +11,7 @@ class Information extends ChangeNotifier {
       message: 'Keep social distances when you are outside.'
     ),
     Info(
-        color: Colors.orangeAccent.shade700,
+        color: Colors.deepOrangeAccent.shade400,
         infoId: 2,
         message: 'Use hand sanitizer, mask and gloves to protect yourself.'
     ),

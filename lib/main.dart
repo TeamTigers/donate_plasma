@@ -3,6 +3,8 @@ import 'package:donateplasma/providers/information.dart';
 import 'package:donateplasma/providers/users.dart';
 import 'package:donateplasma/screens/BannerScreen.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
+import 'package:donateplasma/screens/edit_profile.dart';
+import 'package:donateplasma/screens/story_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 import 'package:provider/provider.dart';
@@ -34,7 +36,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           HomeScreen.routeName: (ctx) => HomeScreen(),
-          BannerScreen.routeName: (ctx) => BannerScreen()
+          BannerScreen.routeName: (ctx) => BannerScreen(),
+          EditProfile.routeName: (ctx) => EditProfile(),
+          StoryScreen.routeName: (ctx) => StoryScreen()
         },
       ),
     );
