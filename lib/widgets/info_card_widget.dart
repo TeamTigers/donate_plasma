@@ -1,3 +1,4 @@
+import 'package:donateplasma/constants/color_constants.dart';
 import 'package:donateplasma/themes/themes_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -21,15 +22,27 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
         height: 150.0,
         width: 150.0,
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(
-              offset: Offset(-4, 4),
-              blurRadius: 10,
-              color: Color(0xFFFFBF05).withOpacity(.2),
-            )
+                color: widget.color
+                    .withOpacity(0.6),
+                offset: const Offset(1.1, 4.0),
+                blurRadius: 8.0),
           ],
+          gradient: LinearGradient(
+            colors: [
+              widget.color,
+              kPrimaryColor,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: const BorderRadius.only(
+            bottomRight: Radius.circular(8.0),
+            bottomLeft: Radius.circular(8.0),
+            topLeft: Radius.circular(8.0),
+            topRight: Radius.circular(48.0),
+          ),
         ),
         child: Column(
           children: <Widget>[
@@ -43,3 +56,5 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
     );
   }
 }
+
+

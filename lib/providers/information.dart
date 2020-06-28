@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class Information extends ChangeNotifier {
   List<Info> _information = [
     Info(
-      color: Colors.green.shade400,
+      color: Colors.greenAccent.shade400,
       infoId: 1,
       message: 'Keep social distances when you are outside.'
     ),
@@ -16,7 +16,7 @@ class Information extends ChangeNotifier {
         message: 'Use hand sanitizer, mask and gloves to protect yourself.'
     ),
     Info(
-        color: Colors.blue.shade400,
+        color: Colors.pinkAccent,
         infoId: 3,
         message: 'Avoid smoking and taking other drugs as it will effect your lungs.'
     ),
@@ -31,7 +31,7 @@ class Information extends ChangeNotifier {
         message: 'Consult with doctor if you feel ill.'
     ),
     Info(
-        color: Colors.indigo.shade400,
+        color: Colors.deepOrangeAccent.shade400,
         infoId: 6,
         message: 'Read books and spend time with family to avoid depression.'
     ),

@@ -42,26 +42,65 @@ class _UsersCardState extends State<UsersCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(25.0),
-              child: Image.asset(widget.userDP),
-            ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(25.0),
+                  child: Image.asset(widget.userDP),
+                ),
+              ),
+              SizedBox(
+                width: 5.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+                child: Icon(
+                  Icons.textsms,
+                  size: 28.0,
+                  color: Theme.of(context).primaryColor,
+                ),
+              )
+            ],
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 5, 0, 2),
+            padding: const EdgeInsets.fromLTRB(10, 5, 0, 5),
             child: Row(
               children: <Widget>[
-                Icon(
-                  Icons.account_circle,
-                  color: Colors.indigoAccent,
+                FaIcon(
+                  FontAwesomeIcons.userAstronaut,
+                  size: 16.0,
+                  color: Colors.pinkAccent,
                 ),
                 SizedBox(
                   width: 5.0,
                 ),
                 Text(
                   widget.userName,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 0, 0, 5),
+            child: Row(
+              children: <Widget>[
+                FaIcon(
+                  FontAwesomeIcons.searchLocation,
+                  size: 16.0,
+                  color: Colors.pinkAccent,
+                ),
+                SizedBox(
+                  width: 5.0,
+                ),
+                Text(
+                  widget.userLocation,
                   style: TextStyle(
                     fontSize: 12,
                     fontFamily: 'Poppins',
@@ -75,31 +114,10 @@ class _UsersCardState extends State<UsersCard> {
             padding: const EdgeInsets.fromLTRB(10, 0, 0, 2),
             child: Row(
               children: <Widget>[
-                Icon(
-                  Icons.location_on,
-                  color: Colors.greenAccent.shade700,
-                ),
-                SizedBox(
-                  width: 5.0,
-                ),
-                Text(
-                  widget.userLocation,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 0, 0, 2),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  Icons.local_hospital,
-                  color: Colors.redAccent,
+                FaIcon(
+                  FontAwesomeIcons.heart,
+                  size: 16.0,
+                  color: Colors.pinkAccent,
                 ),
                 SizedBox(
                   width: 5.0,
@@ -107,7 +125,7 @@ class _UsersCardState extends State<UsersCard> {
                 Text(
                   widget.userBlood,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 12,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w800,
                   ),
@@ -115,8 +133,34 @@ class _UsersCardState extends State<UsersCard> {
               ],
             ),
           ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                height: 30.0,
+                width: 30.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18.0),
+                  color: Colors.green,
+                ),
+                child: new IconButton(
+                  iconSize: 15.5,
+                  icon: new Icon(
+                    Icons.dialer_sip,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
   }
+
+
 }
