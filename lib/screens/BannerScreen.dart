@@ -20,7 +20,7 @@ class BannerScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             FadeAnimation(
-              1.0,
+              1.5,
               Container(
                 height: 95.0,
                 width: 95.0,
@@ -28,7 +28,7 @@ class BannerScreen extends StatelessWidget {
               ),
             ),
             FadeAnimation(
-              1.3,
+              1.6,
               Row(
                 children: <Widget>[
                   Text(
@@ -43,7 +43,7 @@ class BannerScreen extends StatelessWidget {
               ),
             ),
             FadeAnimation(
-              1.3,
+              1.6,
               Text(
                 'Save Life',
                 style: kBannerTitleStyle,
@@ -53,7 +53,7 @@ class BannerScreen extends StatelessWidget {
               height: 25.0,
             ),
             FadeAnimation(
-              1.5,
+              1.7,
               Text(
                 'Recently recovered from Covid-19 ? Help others surviving by donating your plasma. Let\'s fight together to',
                 style: kBannerSubTitleStyle,
@@ -63,7 +63,7 @@ class BannerScreen extends StatelessWidget {
               height: 10.0,
             ),
             FadeAnimation(
-              1.6,
+              1.8,
               Text(
                 'SAVE THE WORLD',
                 style: kBannerSub02TitleStyle,
@@ -73,7 +73,7 @@ class BannerScreen extends StatelessWidget {
               height: 45.0,
             ),
             FadeAnimation(
-              1.7,
+              1.8,
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
                 child: Row(
@@ -110,4 +110,6 @@ class BannerScreen extends StatelessWidget {
       ),
     );
   }
+
+
 }

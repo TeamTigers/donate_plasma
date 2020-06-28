@@ -165,7 +165,7 @@ class EditProfile extends StatelessWidget {
                           height: 50,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.redAccent.shade400,
+                            color: Theme.of(context).primaryColor,
                           ),
                           child: Center(
                             child: Text(

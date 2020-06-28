@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           FadeAnimation(
-            1.5,
+            1.7,
             SizedBox(
               height: 200.0,
               child: ListView.builder(
@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           FadeAnimation(
-            1.7,
+            1.9,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Expanded(
             child: FadeAnimation(
-              1.8,
+              2.0,
               GridView.builder(
                 padding: const EdgeInsets.all(20.0),
                 gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
