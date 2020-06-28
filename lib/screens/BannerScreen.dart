@@ -1,3 +1,4 @@
+import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/text_style_constants.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
 import 'package:flutter/cupertino.dart';
@@ -18,72 +19,90 @@ class BannerScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
-              height: 95.0,
-              width: 95.0,
-              child: Image.asset('assets/images/heart.png'),
+            FadeAnimation(
+              1.0,
+              Container(
+                height: 95.0,
+                width: 95.0,
+                child: Image.asset('assets/images/heart.png'),
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Text(
-                  'Donate',
-                  style: kBannerTitleStyle,
-                ),
-                Text(
-                  ' Plasma',
-                  style: kBannerPlasmaTitleStyle,
-                )
-              ],
+            FadeAnimation(
+              1.3,
+              Row(
+                children: <Widget>[
+                  Text(
+                    'Donate',
+                    style: kBannerTitleStyle,
+                  ),
+                  Text(
+                    ' Plasma',
+                    style: kBannerPlasmaTitleStyle,
+                  )
+                ],
+              ),
             ),
-            Text(
-              'Save Life',
-              style: kBannerTitleStyle,
+            FadeAnimation(
+              1.3,
+              Text(
+                'Save Life',
+                style: kBannerTitleStyle,
+              ),
             ),
             SizedBox(
               height: 25.0,
             ),
-            Text(
-              'Recently recovered from Covid-19 ? Help others surviving by donating your plasma. Let\'s fight together to',
-              style: kBannerSubTitleStyle,
+            FadeAnimation(
+              1.5,
+              Text(
+                'Recently recovered from Covid-19 ? Help others surviving by donating your plasma. Let\'s fight together to',
+                style: kBannerSubTitleStyle,
+              ),
             ),
             SizedBox(
               height: 10.0,
             ),
-            Text(
-              'SAVE THE WORLD',
-              style: kBannerSub02TitleStyle,
+            FadeAnimation(
+              1.6,
+              Text(
+                'SAVE THE WORLD',
+                style: kBannerSub02TitleStyle,
+              ),
             ),
             SizedBox(
               height: 45.0,
             ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  ButtonTheme(
-                    minWidth: 100.0,
-                    height: 40.0,
-                    child: RaisedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
-                      },
-                      child: Text(
-                        'Got it',
-                        style: TextStyle(
-                          color: Theme.of(context).accentColor,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
-                          fontFamily: 'Poppins'
+            FadeAnimation(
+              1.7,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    ButtonTheme(
+                      minWidth: 100.0,
+                      height: 40.0,
+                      child: RaisedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+                        },
+                        child: Text(
+                          'Got it',
+                          style: TextStyle(
+                            color: Theme.of(context).accentColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20.0,
+                            fontFamily: 'Poppins'
+                          ),
+                        ),
+                        color: kBannerBasicColor,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(7.0),
                         ),
                       ),
-                      color: kBannerBasicColor,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(7.0),
-                      ),
-                    ),
-                  )
-                ],
+                    )
+                  ],
+                ),
               ),
             )
           ],

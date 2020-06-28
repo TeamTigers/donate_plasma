@@ -1,5 +1,6 @@
 import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/color_constants.dart';
+import 'package:donateplasma/screens/edit_profile.dart';
 import 'package:donateplasma/widgets/drawerWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,9 @@ class StoryScreen extends StatelessWidget {
         ),
         actions: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(EditProfile.routeName);
+            },
             icon: Icon(
               Icons.pan_tool,
               size: 25,
@@ -53,7 +56,7 @@ class StoryScreen extends StatelessWidget {
               FadeAnimation(
                 1.0,
                 Container(
-                  height: 150.0,
+                  height: 180.0,
                   child: Image.asset('assets/images/st.png'),
                 ),
               ),
@@ -101,6 +104,7 @@ class StoryScreen extends StatelessWidget {
                                       hintText: "Name",
                                       hintStyle: TextStyle(
                                         color: Colors.grey[400],
+                                        fontFamily: 'Poppins',
                                       ),
                                     ),
                                   ),
@@ -124,6 +128,7 @@ class StoryScreen extends StatelessWidget {
                                       hintText: " Your Story",
                                       hintStyle: TextStyle(
                                         color: Colors.grey[400],
+                                        fontFamily: 'Poppins',
                                       ),
                                     ),
                                   ),
@@ -141,7 +146,7 @@ class StoryScreen extends StatelessWidget {
                         height: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Color(0xfffbbd5c),
+                          color: Theme.of(context).primaryColor,
                         ),
                         child: Center(
                           child: Text(
@@ -149,6 +154,7 @@ class StoryScreen extends StatelessWidget {
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins',
                                 fontSize: 20),
                           ),
                         ),

@@ -1,3 +1,4 @@
+import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 import 'package:donateplasma/constants/text_style_constants.dart';
 import 'package:donateplasma/providers/information.dart';
@@ -63,61 +64,70 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          SizedBox(
-            height: 200.0,
-            child: ListView.builder(
-                physics: BouncingScrollPhysics(),
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemCount: information.length,
-                itemBuilder: (ctx, index) => InfoCardWidget(
-                      color: information[index].color,
-                      message: information[index].message,
-                      infoId: information[index].infoId,
-                    )),
+          FadeAnimation(
+            1.5,
+            SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                  physics: BouncingScrollPhysics(),
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemCount: information.length,
+                  itemBuilder: (ctx, index) => InfoCardWidget(
+                        color: information[index].color,
+                        message: information[index].message,
+                        infoId: information[index].infoId,
+                      )),
+            ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.fromLTRB(25, 10, 0, 0),
-                child: Text(
-                  'Find donors',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.bold,
+          FadeAnimation(
+            1.7,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(25, 10, 0, 0),
+                  child: Text(
+                    'Find donors',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 10, 25, 0),
-                child: Icon(Icons.search),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 10, 25, 0),
+                  child: Icon(Icons.search),
+                ),
+              ],
+            ),
           ),
           Expanded(
-            child: GridView.builder(
-              padding: const EdgeInsets.all(20.0),
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
-                childAspectRatio: 1.5 / 2,
-                crossAxisSpacing: 20.0,
-                mainAxisSpacing: 25.0,
+            child: FadeAnimation(
+              1.8,
+              GridView.builder(
+                padding: const EdgeInsets.all(20.0),
+                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: 200,
+                  childAspectRatio: 1.5 / 2,
+                  crossAxisSpacing: 20.0,
+                  mainAxisSpacing: 25.0,
+                ),
+                itemCount: users.length,
+                itemBuilder: (ctx, index) => UsersCard(
+                  userDP: users[index].userDP,
+                  userId: users[index].userId,
+                  userLocation: users[index].userLocation,
+                  userName: users[index].userName,
+                  userPhone: users[index].userPhone,
+                  userBlood: users[index].userBlood,
+                ),
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
               ),
-              itemCount: users.length,
-              itemBuilder: (ctx, index) => UsersCard(
-                userDP: users[index].userDP,
-                userId: users[index].userId,
-                userLocation: users[index].userLocation,
-                userName: users[index].userName,
-                userPhone: users[index].userPhone,
-                userBlood: users[index].userBlood,
-              ),
-              scrollDirection: Axis.vertical,
-              shrinkWrap: true,
             ),
-          )
+          ),
         ],
       ),
     );

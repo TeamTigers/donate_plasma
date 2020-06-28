@@ -94,6 +94,7 @@ class EditProfile extends StatelessWidget {
                                   hintText: "Name",
                                   hintStyle: TextStyle(
                                     color: Colors.grey[400],
+                                    fontFamily: 'Poppins',
                                   ),
                                 ),
                               ),
@@ -113,6 +114,7 @@ class EditProfile extends StatelessWidget {
                                   hintText: "Blood Group",
                                   hintStyle: TextStyle(
                                     color: Colors.grey[400],
+                                    fontFamily: 'Poppins',
                                   ),
                                 ),
                               ),
@@ -130,7 +132,10 @@ class EditProfile extends StatelessWidget {
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Phone number",
-                                  hintStyle: TextStyle(color: Colors.grey[400]),
+                                  hintStyle: TextStyle(
+                                    color: Colors.grey[400],
+                                    fontFamily: 'Poppins',
+                                  ),
                                 ),
                               ),
                             ),
@@ -140,7 +145,10 @@ class EditProfile extends StatelessWidget {
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
                                   hintText: "Location",
-                                  hintStyle: TextStyle(color: Colors.grey[400]),
+                                  hintStyle: TextStyle(
+                                    color: Colors.grey[400],
+                                    fontFamily: 'Poppins',
+                                  ),
                                 ),
                               ),
                             )
@@ -163,9 +171,11 @@ class EditProfile extends StatelessWidget {
                             child: Text(
                               "Save",
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                fontFamily: 'Poppins',
+                              ),
                             ),
                           ),
                         )),
