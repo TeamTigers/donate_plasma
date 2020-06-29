@@ -3,6 +3,7 @@
 ![Banner](screenshots/banner.png)
 
 [![Actions Status](https://github.com/teamtigers/donate_plasma/workflows/flutter-driver/badge.svg)](https://github.com/TeamTigers/donate_plasma/runs/816041523?check_suite_focus=true)
+[![GitHub](https://img.shields.io/github/license/teamtigers/donate_plasma)](https://img.shields.io/github/license/teamtigers/donate_plasma?label=License)
 
 </div>
 
@@ -12,7 +13,7 @@ Welcome to **Donate Plasma** project. As we all know, we are facing a global pan
 
 ## What is plasma? Why plasma is needed to cure corona virus patients?
 
-**Plasma** is the clear, straw-colored liquid portion of blood that remains after red blood cells, white blood cells, platelets and other cellular components are removed. In **Convalescent Plasma Therapy (CPT\_**, plasma collected from recovered patients is infused into patients who currently have the disease.
+**Plasma** is the clear, straw-colored liquid portion of blood that remains after red blood cells, white blood cells, platelets and other cellular components are removed. In **Convalescent Plasma Therapy (CPT)**, plasma collected from recovered patients is infused into patients who currently have the disease.
 
 CPT is, by far, the oldest treatment being tested to battle COVID-19, being successful in cases during the previous corona virus outbreaks such as the Sars epidemic in 2003 and the Ebola virus outbreak in 2013. Physicians used CPT effectively before the specific treatment was developed for H1N1 influenza (Spanish virus), SARS-1 and MERS virus.
 
@@ -30,7 +31,7 @@ Patients who need plasma don't need to create account. They can look for a donor
 
 - **Mobile framework**: Flutter v1.17.4
 - **Architecture**: Provider Pattern
-- **Github action**: CI/CD
+- **CI/CD**: Github Actions
 
 ## Screenshots & Gif
 
