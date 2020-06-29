@@ -48,7 +48,9 @@ Here are some screenshots of our project
 
 **Application gif**
 
-![gIF](screenshots/donate_plasma_teamtigers.gif)
+|                      gif                      |
+| :-------------------------------------------: |
+| ![Drawer](screenshots/donate_plasma_ss_4.png) |
 
 ## Found a problem
 
