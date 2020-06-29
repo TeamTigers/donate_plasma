@@ -4,6 +4,7 @@
 
 [![Actions Status](https://github.com/teamtigers/donate_plasma/workflows/flutter-driver/badge.svg)](https://github.com/TeamTigers/donate_plasma/runs/816041523?check_suite_focus=true)
 [![GitHub](https://img.shields.io/github/license/teamtigers/donate_plasma)](https://img.shields.io/github/license/teamtigers/donate_plasma?label=License)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/teamtigers/donate_plasma/)
 
 </div>
 
