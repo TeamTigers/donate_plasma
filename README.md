@@ -34,6 +34,10 @@ Patients who need plasma don't need to create account. They can look for a donor
 - **Architecture**: Provider Pattern
 - **CI/CD**: Github Actions
 
+## Achievement :tada: :raised_hands:
+
+Thanks to Almighty Allah, we got ourselves **Runner up** position. Yes you read it right!. We submitted this project in the Flutter International Hackathon #Hack20 where 650 teams all over the world participated and submitted 266 projects. After 2 rounds of voting phase, our project has been selected as one of the top three. All thanks to Allah and our dedicated team members who really worked hard and got this achievement. [Winning moment video](screenshots/video/Winning%20moment%20Video.mp4)
+
 ## Screenshots & Gif
 
 Here are some screenshots of our project
